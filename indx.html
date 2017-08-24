@@ -10,17 +10,17 @@
     <link rel='stylesheet prefetch' href='https://www.w3schools.com/w3css/4/w3.css'>
 
     <link rel="stylesheet" href="css/style.css">
-
+ <link rel="script" href="js/index.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="js/index.js"></script>
+
     <!-- ===================================== -->
 </head>
 
 <body>
 <!-- =================    HEADER      ==================== -->
-<div id="title" class="w3-container text-center">
-    <div class="w3-card-4"
-    >
+<div id="titleDiv" class="w3-container text-center">
+    <div id="titleDivCard" class="w3-card-2">
         <h1>Tie Tac Toe</h1>
         <h2>by: Hasan Mohd. Khan</h2>
 
@@ -31,5 +31,28 @@
 <!--  =================  END    HEADER      ==================== -->
 
 
+<!-- ============== New Card  For Selection =================== -->
+
+<div id="selectionDiv" class="w3-container text-center ">
+    <div id="selectionDivCard" class="w3-card-2">
+        <h3 id="selectionDivTitle"> Please Select: </h3>
+        <div id="playerChoose" >
+            <button  id="playerO" class="btn btn-primary"> <i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i> </button>
+            <button id="playerX" class="btn btn-danger"> <i  class="fa fa-times fa-4x" aria-hidden="true"></i> </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ============== END New Card  For Selection =================== -->
+
+
+<!-- ============   Card for Tic Tac Toe Arena   ================= -->
+<!-- ============  END Card for Tic Tac Toe Arena   ================= -->
+
+
+<script src="js/index.js"></script>
 </body>
 </html>

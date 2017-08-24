@@ -1,0 +1,45 @@
+#titleDiv{
+    color: #FFFFFF;
+
+}
+#titleDivCard{
+    background-color: #03A9F4;
+    margin-top: 5px;
+    padding: 10px;
+
+
+}
+
+#selectionDivCard{
+
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+<!--  Blinking border code -->
+@-webkit-keyframes blink {
+    50% { border-color: #ff0000; }
+}
+@keyframes blink {
+    50% { border-color: #ff0000; }
+}
+#selectionDivCard {
+    padding: 10px;
+    border: 5px dashed transparent;
+
+}
+
+#selectionDivCard:hover {
+    animation: blink .5s step-end infinite alternate;
+    -webkit-animation: blink .5s step-end infinite alternate;
+}
+<!-- END  Blinking border code -->
+
+#playerChoose{
+    margin: 5px;
+
+
+}
