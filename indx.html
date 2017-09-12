@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Tic Tac Toe Game</title>
+    <meta name="viewport" content="width=device-width">
 
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
@@ -37,8 +38,8 @@
     <div id="selectionDivCard" class="w3-card-2">
         <h3 id="selectionDivTitle"> Please Select: </h3>
         <div id="playerChoose" >
-            <button  id="playerO" class="btn btn-primary"> <i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i> </button>
-            <button id="playerX" class="btn btn-danger"> <i  class="fa fa-times fa-4x" aria-hidden="true"></i> </button>
+            <button  id="playerO" class="btn btn-primary"> <i  class="fa fa-circle-o " aria-hidden="true"></i> </button>
+            <button id="playerX" class="btn btn-danger"> <i  class="fa fa-times " aria-hidden="true"></i> </button>
 
         </div>
 
@@ -55,34 +56,34 @@
 
 <div id="arena" class="w3-container text-center">
     <div id="arenaCard" class="w3-card-2">
-        <h3 id="arenaCardTitle"> Play  </h3>
+        <h3 id="arenaCardTitle text-center "> Play  </h3>
         <!-- =======   ROW 1         ===========-->
-        <div class="w3-row">
-        <div class="w3-col-md-6">
-            <a class="btn btn-primary tic" id="0"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-            <a class="btn btn-primary tic" id="1"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-            <a class="btn btn-primary tic" id="2"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col">
+           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="0" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="1"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="2"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+            </div>
         </div>
         <!-- =======    END ROW 1      ===========-->
 
 
         <!-- =======   ROW 2             ===========-->
-            <div class="w3-row">
-                <div class="w3-col-md-6">
-                    <a class="btn btn-primary tic" id="3"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-                    <a class="btn btn-primary tic" id="4"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-                    <a class="btn btn-primary tic" id="5"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
+            <div class="w3-row-padding">
+                <div class="w3-col">
+                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="3" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="w3-card w3-blue w3-third w3-hover-shadow w3-hover-purple" id="4"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="5"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
                 </div>
             </div>
          <!-- =======    END ROW 2     ===========-->
 
             <!-- =======   ROW 3            ===========-->
-            <div class="w3-row">
-                <div class="w3-col-md-6">
-                    <a class="btn btn-primary tic" id="6"><i  class="fa fa-circle-o fa-4x" aria-hidden="false"></i></a>
-                    <a class="btn btn-primary tic" id="7"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
-                    <a class="btn btn-primary tic" id="8"><i  class="fa fa-circle-o fa-4x" aria-hidden="true"></i></a>
+            <div class="w3-row-padding">
+                <div class="w3-col">
+                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="6">   <i  class="fa fa-circle-o " aria-hidden="false"></i></div>
+                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="7">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="8">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
                 </div>
             </div>
             <!-- =======    END ROW 3     ===========-->
