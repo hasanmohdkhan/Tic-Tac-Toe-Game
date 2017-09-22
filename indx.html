@@ -60,9 +60,9 @@
         <!-- =======   ROW 1         ===========-->
         <div class="w3-row-padding">
             <div class="w3-col">
-           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="0" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
-           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="1"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
-           <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="2"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+           <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="0" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+           <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="1"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+           <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="2"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
             </div>
         </div>
         <!-- =======    END ROW 1      ===========-->
@@ -71,9 +71,9 @@
         <!-- =======   ROW 2             ===========-->
             <div class="w3-row-padding">
                 <div class="w3-col">
-                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="3" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
-                    <div class="w3-card w3-blue w3-third w3-hover-shadow w3-hover-purple" id="4"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
-                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="5"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="3" ><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="cell w3-card w3-blue w3-third w3-hover-shadow w3-hover-purple" id="4"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="5"><i  class="fa fa-circle-o " aria-hidden="true"></i></div>
                 </div>
             </div>
          <!-- =======    END ROW 2     ===========-->
@@ -81,9 +81,9 @@
             <!-- =======   ROW 3            ===========-->
             <div class="w3-row-padding">
                 <div class="w3-col">
-                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="6">   <i  class="fa fa-circle-o " aria-hidden="false"></i></div>
-                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="7">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
-                    <div class="w3-card w3-yellow w3-third w3-hover-shadow" id="8">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="6">   <i  class="fa fa-circle-o " aria-hidden="false"></i></div>
+                    <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="7">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
+                    <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="8">   <i  class="fa fa-circle-o " aria-hidden="true"></i></div>
                 </div>
             </div>
             <!-- =======    END ROW 3     ===========-->
@@ -92,8 +92,17 @@
 </div>
 
 
+<!-- ============   Card for Tic Tac Toe Result or at end of game   ================= -->
+<div id="EndGameDiv" class="w3-container text-center ">
+    <div id="endGameDivCard" class="endgame w3-card-2 ">
+        <h3 class="text" id="endGameDivTitle"> You Lose </h3>
+        <button onclick="startGame()">Replay</button>
 
+        </div>
 
+    </div>
+
+</div>
 
 
 
