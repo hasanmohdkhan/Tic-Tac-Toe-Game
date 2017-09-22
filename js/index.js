@@ -83,9 +83,13 @@ function gameOver(gameWon) {
 }
 
 function declareWinner(who) {
+    document.getElementById('id01').style.display='block';
     document.querySelector(".endgame").style.display = "block";
     document.querySelector(".endgame .text").innerText = who;
+
+
 }
+
 
 
 
@@ -178,4 +182,9 @@ function minimax(newBoard , player)
 
 }
 
+function close() {
+    document.getElementById('EndGameDiv').style.display='none';
+    console.log("close function");
+    startGame();
 
+}

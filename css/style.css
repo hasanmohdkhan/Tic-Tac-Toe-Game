@@ -75,7 +75,7 @@
 #endGameDivCard{
 
     display: none;
-    width: 200px;
+    width: 100px;
     top:255px;
     background-color: rgba(205,133,633,0.7);
     position: absolute;
