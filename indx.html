@@ -92,22 +92,21 @@
 </div>
 
 
-<!-- ============   Card for Tic Tac Toe Result or at end of game   ================= -->
+<!-- ============   Card for Tic Tac Toe Result or at end of game   === ============== -->
 
 <div id="id01" class="w3-modal">
-    <div class="endGameDivCard w3-modal-content w3-card-4 w3-red">
+    <div class="endGameDivCard ">
 
-     <div id="EndGameDiv" class="w3-container text-center ">
-                <div id="endGameDivCard" class="endgame w3-card-2 w3-red ">
-                    <h3 class="text" id="endGameDivTitle"> You Lose </h3>
+     <div id="EndGameDiv" class="w3-container text-center w3-modal-content w3-hover-blue">
+                <div id="endGameDivCard" class="endgame">
+                    <h3 class="text" id="endGameDivTitle"></h3>
 
-                    <button onclick="startGame()">Replay</button>
+                    <button onclick="document.getElementById('id01').style.display='none' ; startGame();">Replay</button>
 
                 </div>
 
             </div>
-        <span onclick="document.getElementById('id01').style.display='none' ; startGame();"
-              class="w3-button w3-display-topright">&times;</span>
+
 
     </div>
 </div>
