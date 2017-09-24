@@ -108,8 +108,9 @@ function bestSpot() {
 
 function checkTie() {
     if(emptySquares().length == 0){
-        for( var i=0 ;i< cells.length ; i++){
-            cells[i].style.backgroundColor = 'green';
+        for( var i=0 ;i <cells.length ; i++){
+            //cells[i].style.backgroundColor = 'green';
+            console.log("cell length"+cells.length );
             cells[i].removeEventListener('click', turnClick ,false);
 
         }
@@ -191,7 +192,12 @@ function clickO() {
      humanPlayer = 'O';
      aiPlayer = 'X';
     $("#selectionDivCard").hide();
+    $("span").html("<h3>You are : "+humanPlayer+"</h3>");
     $("#arena").show();
+
+
+
+
 }
 
 function clickX() {
@@ -201,5 +207,8 @@ function clickX() {
     aiPlayer = 'O';
     $("#selectionDivCard").hide();
     $("#arena").show();
+
+
+    $("span").html("<h3>You are : "+humanPlayer+"</h3>");
 
 }
