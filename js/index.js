@@ -1,6 +1,6 @@
 var originalBoard;
-const humanPlayer = '0';
-const aiPlayer = 'X';
+var humanPlayer = '0';
+var aiPlayer = 'X';
 const winCombos = [
     [0,1,2],
     [3,4,5],
@@ -60,7 +60,7 @@ function turn(squareId ,player) {
 }
 function checkWin(board , player) {
     let plays = board.reduce((a,e,i) =>
-    (e === player) ? a.concat(i) : a, [])
+    (e === player) ? a.concat(i) : a, []);
     let gameWon = null;
     for(let [index , win] of winCombos.entries()){
         if(win.every(elem => plays.indexOf(elem ) > -1)) {
@@ -73,7 +73,7 @@ function checkWin(board , player) {
 function gameOver(gameWon) {
     for (let index of winCombos[gameWon.index]) {
         document.getElementById(index).style.backgroundColor =
-            gameWon.player == humanPlayer ? "blue" : "red";
+            gameWon.player == humanPlayer ? $(".w3-card").addClass("w3-green") : $(".w3-card").addClass("w3-red");
     }
     for (var i = 0; i < cells.length; i++) {
         cells[i].removeEventListener('click', turnClick, false);
@@ -182,9 +182,18 @@ function minimax(newBoard , player)
 
 }
 
-function close() {
-    document.getElementById('EndGameDiv').style.display='none';
-    console.log("close function");
-    startGame();
+function clickO() {
+    console.log("Click 0");
+
+     humanPlayer = 'O';
+     aiPlayer = 'X';
+
+}
+
+function clickX() {
+    console.log("Click X");
+
+    humanPlayer = 'X';
+    aiPlayer = 'O';
 
 }
