@@ -18,6 +18,9 @@ const cells = document.querySelectorAll('.cell');
 
 startGame();
 function  startGame() {
+    $("#selectionDivCard").show();
+    $("#arena").hide();
+
     // clearing endgame div
     document.querySelector(".endgame").style.display = "none";
     // giving original board a Array with keys
@@ -73,7 +76,7 @@ function checkWin(board , player) {
 function gameOver(gameWon) {
     for (let index of winCombos[gameWon.index]) {
         document.getElementById(index).style.backgroundColor =
-            gameWon.player == humanPlayer ? $(".w3-card").addClass("w3-green") : $(".w3-card").addClass("w3-red");
+            gameWon.player == humanPlayer ? $(".cell").css('color', 'green'): $(".cell").css('color', 'red');
     }
     for (var i = 0; i < cells.length; i++) {
         cells[i].removeEventListener('click', turnClick, false);
@@ -187,7 +190,8 @@ function clickO() {
 
      humanPlayer = 'O';
      aiPlayer = 'X';
-
+    $("#selectionDivCard").hide();
+    $("#arena").show();
 }
 
 function clickX() {
@@ -195,5 +199,7 @@ function clickX() {
 
     humanPlayer = 'X';
     aiPlayer = 'O';
+    $("#selectionDivCard").hide();
+    $("#arena").show();
 
 }
