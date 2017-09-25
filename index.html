@@ -38,12 +38,14 @@
 
 <!-- ============== New Card  For Selection =================== -->
 
-<div id="selectionDiv" class="w3-container text-center ">
+<div id="selectionDiv" class="w3-container text-center w3-animate-top">
     <div id="selectionDivCard" class="w3-card-2">
-        <h3 id="selectionDivTitle"> Please Select: </h3>
+        
+        <h3 id="selectionDivTitle "> Please Select: </h3>
+        
         <div id="playerChoose" >
-            <button onclick="clickO()" id="playerO" class="btn btn-primary"> <i  class="fa fa-circle-o w3-spin" aria-hidden="true"></i> </button>
-            <button onclick="clickX()" id="playerX" class="btn btn-danger"> <i  class="fa fa-times  w3-spin" aria-hidden="true"></i> </button>
+            <button onclick="clickO()" id="playerO" class="btn btn-primary w3-animate-left "> <i  class="fa fa-circle-o w3-spin" aria-hidden="true"></i> </button>
+            <button onclick="clickX()" id="playerX" class="btn btn-danger w3-animate-right"> <i  class="fa fa-times  w3-spin" aria-hidden="true"></i> </button>
 
         </div>
 
@@ -58,11 +60,11 @@
 
 
 
-<div id="arena" class="w3-container text-center">
+<div id="arena" class="w3-container text-center w3-animate-bottom">
     <div id="arenaCard" class="w3-card-2">
         <span id="arenaCardTitle text-center " class="w3-text-blue playerSel w3-spin"> </span>
         <!-- =======   ROW 1         ===========-->
-        <div class="w3-row-padding">
+        <div class="w3-row-padding w3-animate-top">
             <div class="w3-col">
            <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="0" ></div>
            <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="1"></div>
@@ -73,7 +75,7 @@
 
 
         <!-- =======   ROW 2             ===========-->
-            <div class="w3-row-padding">
+            <div class="w3-row-padding w3-animate-left">
                 <div class="w3-col">
                     <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="3" ></div>
                     <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="4"></div>
@@ -83,7 +85,7 @@
          <!-- =======    END ROW 2     ===========-->
 
             <!-- =======   ROW 3            ===========-->
-            <div class="w3-row-padding">
+            <div class="w3-row-padding w3-animate-right">
                 <div class="w3-col">
                     <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="6">   </div>
                     <div class="cell w3-card w3-yellow w3-third w3-hover-shadow" id="7">   </div>
@@ -98,10 +100,10 @@
 
 <!-- ============   Card for Tic Tac Toe Result or at end of game   === ============== -->
 
-<div id="id01" class="w3-modal">
+<div id="id01" class="w3-modal ">
     <div class="endGameDivCard ">
 
-     <div id="EndGameDiv" class="w3-container text-center w3-modal-content w3-hover-blue">
+     <div id="EndGameDiv" class="w3-container text-center w3-modal-content w3-hover-blue w3-animate-top">
                 <div id="endGameDivCard" class="endgame">
                     <h3 class="text" id="endGameDivTitle"></h3>
 
