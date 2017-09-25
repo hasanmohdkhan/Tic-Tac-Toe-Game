@@ -46,8 +46,8 @@
 }
 
 #arenaCard{
-    height: 380px;
-    width:  380px;
+    height: 400px;
+    width:  375px;
     padding: 10px;
     margin: auto;
     margin-top: 20px;
@@ -105,3 +105,8 @@
 }
 
 
+body{
+    
+    background-color: lavender;
+    
+}
